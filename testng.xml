@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGConceptAndFeatures">
+	<!--commenting the group by ctrl+shift+/
+	 <groups>
+	 	 <run>
+	 	 	 <include name="smoke"></include> 
+		</run> 
+	</groups>   -->
+	<test thread-count="5" name="Test">
+		<classes>
+			<!-- <class name="com.test.TestNGLifeCycle"/> -->
+			<class name="com.test.GoogleTest" />
+
+			<class name="com.test.InvocationCountTest"></class>
+			
+			<class name="com.test.ExpectedExceptionFeature">
+				<!-- With the help of include mechanism we can include only particular method 
+					in method tag -->
+				<methods>
+					<include name="exceptionTest"></include>
+				</methods>
+			</class>
+			
+			<class name="com.test.TestNgFeatures">
+				<!-- With the help of exclude mechanism we can exclude particular method 
+					in method tag -->
+				<methods>
+					<exclude name="RegisterPageTest"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- TestNGConceptAndFeatures -->

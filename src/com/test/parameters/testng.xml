@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="yahoo App automation test suite">
+
+	<test name="Login Page Module Test">
+
+		<!-- we can declared environment variable which are common throughout the program is defined inside the <parameter> tag in testng.xml file. -->
+		
+		<!-- <parameter name="Environment" value="QA"></parameter>       //by which we can define the environment in which we want to work.  --> 
+		<parameter name="Browser" value="chrome"></parameter>
+		<parameter name="url" value="https://in.yahoo.com/"></parameter>
+		<parameter name="username" value="abc@yahoo.com"></parameter>
+
+		<classes>
+
+			<class name="com.test.parameters.ParameterTest"></class>
+		</classes>
+
+	</test>
+
+
+
+</suite>

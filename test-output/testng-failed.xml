@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [yahoo App automation test suite]">
+  <parameter name="url" value="https://in.yahoo.com/"/>
+  <parameter name="Browser" value="chrome"/>
+  <parameter name="username" value="abc@yahoo.com"/>
+  <test name="Login Page Module Test(failed)">
+    <parameter name="url" value="https://in.yahoo.com/"/>
+    <parameter name="Browser" value="chrome"/>
+    <parameter name="username" value="abc@yahoo.com"/>
+    <classes>
+      <class name="com.test.parameters.ParameterTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.test.parameters.ParameterTest -->
+    </classes>
+  </test> <!-- Login Page Module Test(failed) -->
+</suite> <!-- Failed suite [yahoo App automation test suite] -->
